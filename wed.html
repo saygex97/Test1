@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng nhập Netflix</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/062595a3-3f95-4d4f-aed4-2cb6f5a7f949/cd3db18d-4007-49ad-9b29-90f5e8d2405d/VN-vi-20230612-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .login-container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 60px 68px 40px;
+            background-color: rgba(0, 0, 0, 0.75);
+            color: white;
+            z-index: 2;
+            border-radius: 5px;
+        }
+
+        .login-container h1 {
+            margin-bottom: 24px;
+        }
+
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 16px;
+            margin-bottom: 20px;
+            background: #333;
+            border: none;
+            color: white;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 16px;
+            background-color: #e50914;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="Netflix Logo">
+
+    <div class="login-container">
+        <h1>Đăng nhập</h1>
+        <form>
+            <input type="email" placeholder="Email hoặc số điện thoại" required>
+            <input type="password" placeholder="Mật khẩu" required>
+            <button type="submit">Đăng nhập</button>
+        </form>
+        <div class="footer">
+            <p>Bạn mới tham gia Netflix? <a href="#">Đăng ký ngay</a></p>
+        </div>
+    </div>
+</body>
+</html>
